@@ -1,2 +1,9 @@
-<h1>Teste</h1>
-<h1><%= @answer %></h1>
+<form action="/questions_controller/answer" method="get">
+  <input type="text" name="question">
+  <input type="submit" value="Ask!">
+</form>
+
+<h1><%= @question %></h1>
+<h1><%= @answer %></h2>
+
+<%= link_to "Ask a new question", "/questions_controller/answer" %>
